@@ -2634,7 +2634,10 @@ header .header-logo-section {
         align-items: flex-start;
         flex-direction: column;
                 gap: 67px;
-
+    }
+    .hero-wrapper .hero-wrapper-inner .theme-red-button{
+      font-size: 16px;
+      letter-spacing: 0;
     }
     .hero-wrapper.about_wrapper .hero-wrapper-inner  {
       align-items: center;
@@ -2844,6 +2847,7 @@ header .header-logo-section {
     .hero-wrapper.about_wrapper {
         padding-top: 185px;
         padding-bottom:52px;
+        background: url(./assets/images/about_banner_mob.png) no-repeat;
     }
     .hero-wrapper.blog_wrapper {
       padding-top: 165px;
@@ -3190,6 +3194,9 @@ section.remote-code {
 .contact_banner{
   padding-top:165px !important;
   padding-bottom: 46px !important;
+}
+.hover-content-outer {
+  padding: 35px 0px;
 }
      /* SERVICE PAGE STARTS HERE */
 

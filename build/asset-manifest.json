@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c4f235c.css",
+    "main.css": "/static/css/main.5ad1e9aa.css",
     "main.js": "/static/js/main.08b7982f.js",
     "static/js/453.33bc3e38.chunk.js": "/static/js/453.33bc3e38.chunk.js",
     "static/media/dexter_icon_1.svg": "/static/media/dexter_icon_1.69bcb3bea88c8e182e3804c86c6c8368.svg",
@@ -31,6 +31,7 @@
     "static/media/blog_contet_bg.jpg": "/static/media/blog_contet_bg.099be3614a0f5794c150.jpg",
     "static/media/back-ground-article.png": "/static/media/back-ground-article.efcc6b5fda0e243a624d.png",
     "static/media/machinekey.png": "/static/media/machinekey.24c2e329ba90dd529d33.png",
+    "static/media/about_banner_mob.png": "/static/media/about_banner_mob.19aa2bbe4cc6bd3ef5ff.png",
     "static/media/industry-logo-2.svg": "/static/media/industry-logo-2.396dd8ebd6ced2e99105180a886b8fa3.svg",
     "static/media/industry-logo-1.svg": "/static/media/industry-logo-1.8f394018340480f14c0dcb03709a66ab.svg",
     "static/media/industry-logo-4.svg": "/static/media/industry-logo-4.a50a91380368c292e2f0b396e4e16028.svg",
@@ -48,12 +49,12 @@
     "index.html": "/index.html",
     "static/media/separator.svg": "/static/media/separator.173e670bdf3b5bce7180.svg",
     "static/media/white-arrow.svg": "/static/media/white-arrow.1d7e14ba4bda8d59e434.svg",
-    "main.4c4f235c.css.map": "/static/css/main.4c4f235c.css.map",
+    "main.5ad1e9aa.css.map": "/static/css/main.5ad1e9aa.css.map",
     "main.08b7982f.js.map": "/static/js/main.08b7982f.js.map",
     "453.33bc3e38.chunk.js.map": "/static/js/453.33bc3e38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c4f235c.css",
+    "static/css/main.5ad1e9aa.css",
     "static/js/main.08b7982f.js"
   ]
 }
