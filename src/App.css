@@ -2848,6 +2848,7 @@ header .header-logo-section {
         padding-top: 185px;
         padding-bottom:52px;
         background: url(./assets/images/about_banner_mob.png) no-repeat;
+        background-size: cover;
     }
     .hero-wrapper.blog_wrapper {
       padding-top: 165px;
