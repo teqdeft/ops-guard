@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom'
 import GetStartedBtn from '../components/buttons/GetStartedBtn'
 
 const About = (props) => {
+    document.title = "About - OpsGuard"
     return (
         <div className="line_overlay">
             <div className="hero-wrapper about_wrapper">

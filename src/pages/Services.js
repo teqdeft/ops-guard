@@ -14,7 +14,6 @@ import networkLogo from '../assets/images/network-logo.png';
 import cloudImage from '../assets/images/cloud.png';
 import cloudLogo from '../assets/images/cloud-logo.png';
 import GetStartedBtn from "../components/buttons/GetStartedBtn"
-import LearnMoreBtn from '../components/buttons/LearnMoreBtn';
 
 
 const servicesData = [
@@ -129,9 +128,10 @@ const servicesData = [
 ];
 
 const Services = (props) => {
+  document.title = "Services - OpsGuard"
   return (
     <div className="line_overlay">
-      
+
       <div className="hero-wrapper about_wrapper service_banner">
         <div className="custom-container">
           <div className="hero-wrapper-inner">
@@ -185,16 +185,16 @@ const Services = (props) => {
                 </div>
                 <div className="cyber-bottom-text">
                   <p>{service.description}</p>
-                  
-                  <GetStartedBtn/>
-                
+
+                  <GetStartedBtn />
+
                 </div>
               </section>
             ))}
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 

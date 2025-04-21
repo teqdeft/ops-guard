@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
 
 
-
 function App() {
   return (
     <BrowserRouter>

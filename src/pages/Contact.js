@@ -4,6 +4,7 @@ import ContactCheckbox from '../components/checkbox/ContactCheckbox'
 
 
 const Contact = (props) => {
+    document.title = "Contact - OpsGuard"
     return (
         <>
             <div className="line_overlay">

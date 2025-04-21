@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const LearnMoreBtn = () => {
   return (
     <div>
-       <NavLink to="/" className="theme-outline-button">Learn more </NavLink> 
+      <NavLink to="/about" className="theme-outline-button">Learn more </NavLink>
     </div>
   )
 }

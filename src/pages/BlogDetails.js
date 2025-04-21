@@ -11,13 +11,16 @@ import twitterImg from "../assets/images/twitter.png";
 import facebookImg from "../assets/images/facebook.png";
 import arrowLeft from "../assets/images/arrow_left.png";
 import arrowRight from "../assets/images/arrow-right.png";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const BlogDetails = (props) => {
+  document.title = "Blogs - OpsGuard"
+
   return (
     <>
       {/* LINE_OVERLAY_COMPONENTS_START_HERE */}
       <div className="line_overlay">
+      
         {/* BANNER-COMPONENT-START-HERE */}
         <div className="hero-wrapper about_wrapper blog_detail_banner">
           <div className="custom-container">
@@ -56,12 +59,12 @@ const BlogDetails = (props) => {
                 </div>
                 <div className="ideas">
                   <ul>
-                    <li><a href="#">Use of Path Traversal vulnerability to read web.config file</a></li>
-                    <li><a href="#">Use of the MachineKey obtained from web.config</a></li>
-                    <li><a href="#">The concept that there can be multiple nested .NET applications, each with
-                      its own web.config file</a></li>
-                    <li><a href="#">Exploiting ViewState Deserialization vulnerability to achieve RCE</a></li>
-                    <li><a href="#">Use of DNS queries to exfiltrate the results of RCE</a></li>
+                    <li><NavLink to="#">Use of Path Traversal vulnerability to read web.config file</NavLink></li>
+                    <li><NavLink to="#">Use of the MachineKey obtained from web.config</NavLink></li>
+                    <li><NavLink to="#">The concept that there can be multiple nested .NET applications, each with
+                      its own web.config file</NavLink></li>
+                    <li><NavLink to="#">Exploiting ViewState Deserialization vulnerability to achieve RCE</NavLink></li>
+                    <li><NavLink to="#">Use of DNS queries to exfiltrate the results of RCE</NavLink></li>
                   </ul>
                 </div>
                 <div className="idea-bottom">
@@ -101,9 +104,9 @@ const BlogDetails = (props) => {
                     <p>Now, there is the concept of MachineKey in .NET which has information about encryption
                       and decryption of .NET component like, OwinCookie, ASPXAUTH cookie, ViewState and many
                       more.</p><br />
-                    <p>Reference <a
-                      href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v=vs.100)">
-                      https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v=vs.100)</a>
+                    <p>Reference <NavLink
+                      to="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v=vs.100)">
+                      https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v=vs.100)</NavLink>
                     </p> <br />
                     <p>When a .NET application uses the ViewState functionality, the MachineKey becomes very
                       useful to obtain remote code execution (RCE) on the application server. Therefore when
@@ -123,7 +126,7 @@ const BlogDetails = (props) => {
                   <img src={authorImg} alt="" />
                 </div>
                 <div className="author-right-content">
-                  <a href="#">About the author</a>
+                  <NavLink to="#">About the author</NavLink>
                   <h5>Dexter Morgan</h5>
                   <h6>Security Engineer at Global Enterprise</h6>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id odio vitae sapien interdum
@@ -139,39 +142,39 @@ const BlogDetails = (props) => {
                 </div>
                 <div className="article-bottom-imgs">
                   <div className="art-share">
-                    <a href="javascript:void(0)">
+                    <NavLink to="#">
                       <img src={linkedinImg} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                   <div className="art-share">
-                    <a href="javascript:void(0)">
+                    <NavLink to="#">
                       <img src={firefoxImg} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                   <div className="art-share">
-                    <a href="javascript:void(0)">
+                    <NavLink to="#">
                       <img src={twitterImg} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                   <div className="art-share">
-                    <a href="javascript:void(0)">
+                    <NavLink to="#">
                       <img src={facebookImg} alt="" />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
               <div className="articles-buttons">
                 <div className="article-left">
-                  <a href="" className="theme-outline-button black-btn"><span><img src={arrowLeft} alt="" /></span>Bypassing Hardened Android Applications</a>
+                  <NavLink to="" className="theme-outline-button black-btn"><span><img src={arrowLeft} alt="" /></span>Bypassing Hardened Android Applications</NavLink>
                 </div>
                 <div className="article-right">
-                  <a href="" className="theme-outline-button black-btn right">Tool Release: Serialized Payload Generator <span><img src={arrowRight} alt="" /></span></a>
+                  <NavLink to="" className="theme-outline-button black-btn right">Tool Release: Serialized Payload Generator <span><img src={arrowRight} alt="" /></span></NavLink>
                 </div>
               </div>
             </div>
           </div>
         </section>
-     
+
       </div>
     </>
   );

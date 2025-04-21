@@ -7,9 +7,9 @@ import { NavLink } from 'react-router-dom'
 const GetStartedBtn = () => {
 
   return (
-    
-      <NavLink to="/blog" className="theme-red-button">Get Started Now <span><img src={arrow} alt="" /></span></NavLink>
-    
+
+    <NavLink to="/services" className="theme-red-button">Get Started Now <span><img src={arrow} alt="" /></span></NavLink>
+
   )
 }
 

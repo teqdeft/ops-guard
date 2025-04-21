@@ -25,6 +25,7 @@ import CloudCard from '../components/cards/CloudCard'
 
 
 const Home = (props) => {
+    document.title = "OpsGuard"
     return (
         <div className="line_overlay">
             <div className="hero-wrapper">
@@ -75,9 +76,9 @@ const Home = (props) => {
                         <div className="blogs-grid">
                             <div className="blogs-grid-item">
                                 <div className="img-section">
-                                    <NavLink to="/"><img src={blog1} alt="" /></NavLink>
+                                    <NavLink to="/blog-details"><img src={blog1} alt="" /></NavLink>
                                 </div>
-                                <NavLink to="/">
+                                <NavLink to="/blog-details">
                                     <div className="blog-grid-content">
                                         <h6>Dexter Morgan • 17 Sep 2024</h6>
                                         <h3>Bypassing Hardened Android Applications</h3>
@@ -87,9 +88,9 @@ const Home = (props) => {
                             </div>
                             <div className="blogs-grid-item">
                                 <div className="img-section">
-                                    <NavLink to="/"><img src={blog2} alt="" /></NavLink>
+                                    <NavLink to="/blog-details"><img src={blog2} alt="" /></NavLink>
                                 </div>
-                                <NavLink to="/">
+                                <NavLink to="/blog-details">
                                     <div className="blog-grid-content">
                                         <h6>Dexter Morgan • 17 Sep 2024</h6>
                                         <h3>Path Traversal to Remote Code Execution</h3>
@@ -99,9 +100,9 @@ const Home = (props) => {
                             </div>
                             <div className="blogs-grid-item">
                                 <div className="img-section">
-                                    <NavLink to="/"><img src={blog3} alt="" /></NavLink>
+                                    <NavLink to="/blog-details"><img src={blog3} alt="" /></NavLink>
                                 </div>
-                                <NavLink to="/">
+                                <NavLink to="/blog-details">
                                     <div className="blog-grid-content">
                                         <h6>Dexter Morgan • 17 Sep 2024</h6>
                                         <h3>Tool Release: Serialized Payload Generator</h3>

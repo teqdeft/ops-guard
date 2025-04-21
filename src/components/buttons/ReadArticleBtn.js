@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom'
 const ReadArticleBtn = () => {
   return (
     <NavLink to="/blog-details" type="button" className="theme-outline-button">
-    Read Full Article
-    <span>
-      <img src={redarrow} alt="" />
-    </span>
-  </NavLink>
+      Read Full Article
+      <span>
+        <img src={redarrow} alt="" />
+      </span>
+    </NavLink>
   )
 }
 

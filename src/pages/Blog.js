@@ -31,7 +31,7 @@ const blogsData = [
     author: 'Mike Shinoda',
     date: '17 Sep 2024',
     title: 'Path Traversal to Remote Code Execution',
-    blackArrow: blackarrow, 
+    blackArrow: blackarrow,
     blackArrowAlt: '',
     description:
       'In this blog post, Sanjay from the NotSoSecure Training team describes an interesting project where he starts with a path traversal vulnerability, and chains multiple vulnerabilities to achieve remote code execution (RCE) in a .NET web application.',
@@ -45,13 +45,14 @@ const blogsData = [
     author: 'Dexter Morgan',
     date: '17 Sep 2024',
     title: 'Tool Release: Serialized Payload Generator',
-    blackArrow: blackarrow, 
+    blackArrow: blackarrow,
     description:
       'Serialization bugs have been making rounds across the internet. The exploitation of serialization bugs has grown in leaps and bounds in the last few years. We have been closely monitoring this area and addressing it in our pentests as well as our trainings. Serialization bugs have been making rounds across the internet. The exploitation of serialization bugs has grown in leaps and bounds in the last few years. We have been closely monitoring this area and addressing it in our pentests as well as our trainings.',
   },
 ];
 
 const Blog = (props) => {
+  document.title = "Blogs - OpsGuard"
   const navigate = useNavigate();
 
   const handleBlogClick = (blog) => {
@@ -64,6 +65,7 @@ const Blog = (props) => {
         <div className="custom-container">
           <div className="hero-wrapper-inner">
             <h1>{props.title} </h1>
+            
           </div>
         </div>
       </div>
@@ -74,17 +76,17 @@ const Blog = (props) => {
             <div className="home-service-heading">
               <h2>{blogsData.length} Articles</h2>
             </div>
-          
-            <div className="blog_select_box">
-                    <div className="blog-inner-box">
-                  
-                          <select className='blog-select'>
-              <option className='blog-select-option'>Newest First</option>
-              <option className='blog-select-option'>Oldest First</option>
 
-            </select>
-                    </div>
-                </div>
+            <div className="blog_select_box">
+              <div className="blog-inner-box">
+
+                <select className='blog-select'>
+                  <option className='blog-select-option'>Newest First</option>
+                  <option className='blog-select-option'>Oldest First</option>
+
+                </select>
+              </div>
+            </div>
           </div>
           <div className="blogs_bottom_section">
             {blogsData.map((blog) => (
@@ -94,7 +96,7 @@ const Blog = (props) => {
                     src={blog.image}
                     alt={blog.imageAlt}
                     onClick={() => handleBlogClick(blog)}
-                   
+
                   />
                 </div>
                 <div className="blogs_grid_content">
@@ -114,23 +116,23 @@ const Blog = (props) => {
                       )}
                     </h3>
                     <p>{blog.description}</p>
-                   <ReadArticleBtn/>
+                    <ReadArticleBtn />
                   </div>
                 </div>
 
               </div>
             ))}
-             <div className="blog_pagination">
-            <ul>
-              <li className="active"><NavLink >1</NavLink></li>
-              <li><NavLink >2</NavLink></li>
-              <li><NavLink >3</NavLink></li>
-              <li><NavLink >4</NavLink></li>
-              <li><NavLink >Next</NavLink></li>
-            </ul>
+            <div className="blog_pagination">
+              <ul>
+                <li className="active"><NavLink >1</NavLink></li>
+                <li><NavLink >2</NavLink></li>
+                <li><NavLink >3</NavLink></li>
+                <li><NavLink >4</NavLink></li>
+                <li><NavLink >Next</NavLink></li>
+              </ul>
+            </div>
           </div>
-          </div>
-         
+
         </div>
       </div>
     </div>
